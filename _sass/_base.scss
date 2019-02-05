@@ -55,6 +55,10 @@ p {
     color: rgba(#3f6670, .7);
 }
 
+.text-black {
+    color: rgba(black, .7);
+}
+
 section {
     padding: 100px 0;
 }
@@ -283,6 +287,15 @@ header {
         margin: 0 auto 20px;
         color: #3f6670;
     }
+}
+
+.tema {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        @include background-cover;
+        background-position: center;
+        background-image: url('../img/hawaii.jpg');
 }
 
 // Bootstrap Overrides
