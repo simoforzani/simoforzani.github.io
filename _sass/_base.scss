@@ -22,7 +22,8 @@ a {
     @include transition-all;
     color: $theme-primary;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
         color: darken($theme-primary, 10%);
     }
 }
