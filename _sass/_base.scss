@@ -366,14 +366,7 @@ header {
     @include background-cover;
     background-position: center;
     background-image: url('../img/rsvp.jpg');
-    .rsvp-content {
-        position: center;
-        .rsvp-content-inner {
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
+    text-align: center;
 }
 
 // Bootstrap Overrides
