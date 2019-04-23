@@ -268,7 +268,10 @@ header {
             }
         }
     }
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active
+     {
         .album-box-caption {
             opacity: 1;
         }
