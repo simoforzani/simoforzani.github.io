@@ -126,8 +126,8 @@ aside {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            //color: rgba(white, .7);
-            color: $theme-primary;
+            color: rgba(white, .7);
+            //color: $theme-primary;
             &:hover,
             &:focus {
                 color: white;
@@ -135,8 +135,8 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            //color: rgba(white, .7);
-            color: $theme-primary;
+            color: rgba(white, .9);
+            //color: $theme-primary;
             &:hover {
                 color: white;
             }
@@ -171,7 +171,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.png');
+    background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
     .header-content {
