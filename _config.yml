@@ -17,6 +17,8 @@ github_username:
 
 permalink: /:year/:month/:day/:title/
 
+include: [_pages]
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
