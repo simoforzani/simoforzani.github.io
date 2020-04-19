@@ -52,6 +52,11 @@ p {
     color: white;
 }
 
+.bg-white {
+    background-color: white;
+    color: $theme-primary;
+}
+
 .text-faded {
     color: rgba(#3f6670, .7);
 }
@@ -121,7 +126,8 @@ aside {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            //color: rgba(white, .7);
+            color: $theme-primary;
             &:hover,
             &:focus {
                 color: white;
@@ -129,7 +135,8 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            //color: rgba(white, .7);
+            color: $theme-primary;
             &:hover {
                 color: white;
             }
@@ -160,11 +167,11 @@ aside {
 
 header {
     position: relative;
-    width: 100%;
+    width: auto;
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/header.png');
     text-align: center;
     color: white;
     .header-content {
@@ -191,18 +198,25 @@ header {
         }
     }
     @media (min-width: 768px) {
-        min-height: 100%;
+        min-height: 40%;
+        //width: auto;
         .header-content {
-            position: absolute;
+            position: relative;
+            text-align: center;
+            padding: 100px 15px 100px;
             top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            padding: 0 50px;
             .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
+                h1 {
+                    //font-weight: 100;
+                    font-size: 25px;
+                    margin-top: 100;
+                    margin-bottom: 100;
+                    color: white;
+                    font-weight: bold;
+                }
                 p {
                     font-size: 18px;
                     max-width: 80%;

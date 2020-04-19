@@ -1,0 +1,17 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="navbar-center">
+                <ul class="list-inline social-buttons">
+                    {% for account in site.data.social %}
+                    <li class="list-inline-item">
+                        <a href="{{ account.link }}">
+                            <i class="{{ account.social }}"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
